@@ -1,4 +1,5 @@
-const Operation = require('src/app/Operation');
+const Operation = require("src/app/Operation");
+class AddMode extends ModeStyle {}
 
 class GetUser extends Operation {
   constructor({ usersRepository }) {
@@ -12,15 +13,15 @@ class GetUser extends Operation {
     try {
       const user = await this.usersRepository.getById(userId);
       this.emit(SUCCESS, user);
-    } catch(error) {
+    } catch (error) {
       this.emit(NOT_FOUND, {
         type: error.message,
-        details: error.details
+        details: error.details,
       });
     }
   }
 }
 
-GetUser.setOutputs(['SUCCESS', 'ERROR', 'NOT_FOUND']);
+GetUser.setOutputs(["SUCCESS", "ERROR", "NOT_FOUND"]);
 
 module.exports = GetUser;
