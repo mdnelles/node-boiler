@@ -17,6 +17,7 @@ class GetUser extends Operation {
       this.emit(NOT_FOUND, {
         type: error.message,
         details: error.details,
+        partial: "0",
       });
     }
   }
