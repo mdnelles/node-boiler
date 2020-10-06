@@ -14,6 +14,7 @@ class GetUser extends Operation {
       const user = await this.usersRepository.getById(userId);
       this.emit(SUCCESS, user);
     } catch (error) {
+      console.log(error);
       this.emit(NOT_FOUND, {
         type: error.message,
         details: error.details,
