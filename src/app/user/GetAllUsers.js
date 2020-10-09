@@ -1,4 +1,4 @@
-const Operation = require('src/app/Operation');
+const Operation = require("src/app/Operation");
 
 class GetAllUsers extends Operation {
   constructor({ usersRepository }) {
@@ -11,16 +11,17 @@ class GetAllUsers extends Operation {
 
     try {
       const users = await this.usersRepository.getAll({
-        attributes: ['id', 'name']
+        attributes: ["id", "name"],
       });
 
       this.emit(SUCCESS, users);
-    } catch(error) {
+    } catch (error) {
       this.emit(ERROR, error);
+      console.log(error);
     }
   }
 }
 
-GetAllUsers.setOutputs(['SUCCESS', 'ERROR']);
+GetAllUsers.setOutputs(["SUCCESS", "ERROR"]);
 
 module.exports = GetAllUsers;
