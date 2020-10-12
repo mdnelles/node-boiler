@@ -67,6 +67,7 @@ const tasks = new Listr([
             info: {
               title: "Node API boilerplate",
               version: "v1",
+              commit: "IIV",
             },
             servers: [
               {
