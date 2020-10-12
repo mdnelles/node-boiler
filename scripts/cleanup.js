@@ -57,7 +57,7 @@ const tasks = new Listr([
     },
   },
   {
-    title: "Attemp Remove example data from swagger.json",
+    title: "Attemp Removal of example data from swagger.json",
     task() {
       writeFileSync(
         path.join(srcPath, "interfaces", "http", "swagger", "swagger.json"),
@@ -67,7 +67,7 @@ const tasks = new Listr([
             info: {
               title: "Node API boilerplate",
               version: "v1",
-              commit: "IIV",
+              commit: "IX",
             },
             servers: [
               {
