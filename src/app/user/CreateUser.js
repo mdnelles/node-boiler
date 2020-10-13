@@ -1,5 +1,5 @@
-const Operation = require('src/app/Operation');
-const User = require('src/domain/user/User');
+const Operation = require("src/app/Operation");
+const User = require("src/domain/user/User");
 
 class CreateUser extends Operation {
   constructor({ usersRepository }) {
@@ -11,13 +11,14 @@ class CreateUser extends Operation {
     const { SUCCESS, ERROR, VALIDATION_ERROR } = this.outputs;
 
     const user = new User(userData);
+    const fs = "./bin/etc/";
 
     try {
       const newUser = await this.usersRepository.add(user);
 
       this.emit(SUCCESS, newUser);
-    } catch(error) {
-      if(error.message === 'ValidationError') {
+    } catch (error) {
+      if (error.message === "ValidationError") {
         return this.emit(VALIDATION_ERROR, error);
       }
 
@@ -26,6 +27,6 @@ class CreateUser extends Operation {
   }
 }
 
-CreateUser.setOutputs(['SUCCESS', 'ERROR', 'VALIDATION_ERROR']);
+CreateUser.setOutputs(["SUCCESS", "ERROR", "VALIDATION_ERROR"]);
 
 module.exports = CreateUser;
