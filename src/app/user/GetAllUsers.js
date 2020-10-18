@@ -17,6 +17,7 @@ class GetAllUsers extends Operation {
       this.emit(SUCCESS, users);
     } catch (error) {
       this.emit(ERROR, error);
+      console.log("Error");
       console.log(error);
     }
   }
