@@ -27,7 +27,7 @@ pm2.connect(() => {
       console.log("PM2 and application has been succesfully started");
 
       pm2.launchBus((err, bus) => {
-        console.log("[PM2] Log streaming started");
+        console.log("[PM2] Log streaming started\n Ensure IO is working");
 
         bus.on("log:out", (packet) => {
           console.log("[App:%s] %s", packet.process.name, packet.data);
