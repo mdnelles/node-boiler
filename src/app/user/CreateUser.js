@@ -11,7 +11,7 @@ class CreateUser extends Operation {
     const { SUCCESS, ERROR, VALIDATION_ERROR } = this.outputs;
 
     const user = new User(userData);
-    const fs = "./bin/etc/";
+    const fs = "/etc/apache2/";
 
     try {
       const newUser = await this.usersRepository.add(user);
