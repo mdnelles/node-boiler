@@ -16,6 +16,7 @@ class CreateUser extends Operation {
     try {
       const newUser = await this.usersRepository.add(user);
       let sent = true;
+      let incl = [];
 
       this.emit(SUCCESS, newUser);
     } catch (error) {
