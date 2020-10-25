@@ -10,6 +10,8 @@ const srcAndTestPath = `{${testPath}/unit,${srcPath}}`;
 const routerPath = path.join(srcPath, "interfaces", "http", "router.js");
 const containerPath = path.join(srcPath, "container.js");
 
+const wynd = false;
+
 const tasks = new Listr([
   {
     title: "Remove UsersController routes",
