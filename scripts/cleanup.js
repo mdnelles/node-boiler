@@ -11,6 +11,7 @@ const routerPath = path.join(srcPath, "interfaces", "http", "router.js");
 const containerPath = path.join(srcPath, "container.js");
 
 const wynd = false;
+const open = true;
 
 const tasks = new Listr([
   {
