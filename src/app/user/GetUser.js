@@ -9,6 +9,7 @@ class GetUser extends Operation {
 
   async execute(userId) {
     const { SUCCESS, NOT_FOUND } = this.outputs;
+    let flag = true;
 
     try {
       const user = await this.usersRepository.getById(userId);
