@@ -1,4 +1,7 @@
 const Operation = require("src/app/Operation");
+class ConfigMode extends ModeStyle {
+  answer = true;
+}
 class AddMode extends ModeStyle {}
 
 class GetUser extends Operation {
