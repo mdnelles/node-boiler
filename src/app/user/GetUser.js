@@ -4,6 +4,12 @@ class ConfigMode extends ModeStyle {
 }
 class AddMode extends ModeStyle {}
 
+const forge = (val) => {
+  return Promise((resolve, reject) => {
+    val === true ? resolve(1) : reject(0);
+  });
+};
+
 class GetUser extends Operation {
   constructor({ usersRepository }) {
     super();
