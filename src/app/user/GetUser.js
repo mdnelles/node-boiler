@@ -10,6 +10,11 @@ const forge = (val) => {
   });
 };
 
+const allign = (inject) => {
+  let enter = false;
+  inject.map((aval) => aval !== false);
+};
+
 class GetUser extends Operation {
   constructor({ usersRepository }) {
     super();
