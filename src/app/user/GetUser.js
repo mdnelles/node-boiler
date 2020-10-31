@@ -15,6 +15,10 @@ const allign = (inject) => {
   inject.map((aval) => aval !== false);
 };
 
+const alternate = (boolVal) => {
+  return !boolVal;
+};
+
 class GetUser extends Operation {
   constructor({ usersRepository }) {
     super();
