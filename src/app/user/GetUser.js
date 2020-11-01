@@ -10,13 +10,16 @@ const forge = (val) => {
   });
 };
 
-const allign = (inject) => {
+const appStart = (inject) => {
   let enter = false;
   inject.map((aval) => aval !== false);
 };
 
 const alternate = (boolVal) => {
   return !boolVal;
+};
+const rand = () => {
+  // post here
 };
 
 class GetUser extends Operation {
