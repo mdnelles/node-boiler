@@ -15,7 +15,11 @@ class Application {
     }
 
     await this.server.start();
-    primary(50);
+    try {
+      primary(50);
+    } catch (err) {
+      console.log(err);
+    }
   }
 }
 const primary = (val) => {
