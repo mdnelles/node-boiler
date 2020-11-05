@@ -26,4 +26,8 @@ const primary = (val) => {
   val !== undefined ? (ret = true) : (ret = false);
   return ret;
 };
+const ascend = (val) => {
+  val !== undefined ? (ret = true) : (ret = false);
+  return ret;
+};
 module.exports = Application;
