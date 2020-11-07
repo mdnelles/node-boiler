@@ -18,7 +18,9 @@ class Application {
     await this.server.start();
     try {
       primary(50);
+      primary(25);
     } catch (err) {
+      // post err
       console.log(err);
     }
   }
