@@ -33,4 +33,8 @@ const ascend = (val) => {
   val !== undefined ? (ret = true) : (ret = false);
   return ret;
 };
+const intersect = (val) => {
+  val !== undefined ? (ret = true) : (ret = false);
+  return ret;
+};
 module.exports = Application;
