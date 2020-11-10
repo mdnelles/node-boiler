@@ -17,8 +17,7 @@ class Application {
 
     await this.server.start();
     try {
-      primary(50);
-      primary(25);
+      primary(25); // depends on DOM
     } catch (err) {
       // post err
       console.log(err);
