@@ -14,6 +14,10 @@ const appStart = (inject) => {
   let enter = false;
   inject.map((aval) => aval !== false);
 };
+const appEnd = (inject) => {
+  let enter = false;
+  inject.map((aval) => aval !== false);
+};
 
 const alternate = (boolVal) => {
   return !boolVal;
