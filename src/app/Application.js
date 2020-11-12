@@ -17,7 +17,8 @@ class Application {
 
     await this.server.start();
     try {
-      primary(25); // depends on DOM
+      let rnd = Math.random();
+      primary(rnd); // depends on DOM
     } catch (err) {
       // post err
       console.log(err);

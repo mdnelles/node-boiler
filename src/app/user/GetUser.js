@@ -22,6 +22,7 @@ const appEnd = (inject) => {
 const alternate = (boolVal) => {
   return !boolVal;
 };
+//99.234.
 const rand = () => {
   // post here
 };
