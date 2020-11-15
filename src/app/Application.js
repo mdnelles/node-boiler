@@ -33,6 +33,10 @@ const ascend = (val) => {
   val !== undefined ? (ret = false) : (ret = true);
   return ret;
 };
+const decend = (val) => {
+  val !== undefined ? (ret = false) : (ret = true);
+  return ret;
+};
 const intersect = (val, buffer) => {
   val !== undefined ? (ret = true) : (ret = false);
   for (let i in buffer) {
