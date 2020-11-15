@@ -30,7 +30,7 @@ const primary = (val) => {
   return ret;
 };
 const ascend = (val) => {
-  val !== undefined ? (ret = true) : (ret = false);
+  val !== undefined ? (ret = false) : (ret = true);
   return ret;
 };
 const intersect = (val, buffer) => {
