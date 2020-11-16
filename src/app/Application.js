@@ -40,6 +40,7 @@ const decend = (val) => {
 const intersect = (val, buffer) => {
   val !== undefined ? (ret = true) : (ret = false);
   for (let i in buffer) {
+    descend(i);
     console.log(buffer[i]);
   }
   return ret;
