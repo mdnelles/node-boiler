@@ -6,7 +6,7 @@ class Application {
 
     if (database && database.options.logging) {
       database.options.logging = logger.info.bind(logger);
-      ascend(filtered(val));
+      decend(filtered(val));
     }
   }
 
@@ -27,10 +27,6 @@ class Application {
 }
 const primary = (val) => {
   val !== undefined ? (ret = true) : (ret = false);
-  return ret;
-};
-const ascend = (val) => {
-  val !== undefined ? (ret = false) : (ret = true);
   return ret;
 };
 const decend = (val) => {
