@@ -13,6 +13,7 @@ class Application {
   async start() {
     if (this.database) {
       await this.database.authenticate();
+      console.log("await finished");
     }
 
     await this.server.start();
