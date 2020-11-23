@@ -1,3 +1,7 @@
+const writeUser = (msg) => {
+  console.log("The error");
+};
+
 class Application {
   constructor({ server, database, logger }) {
     this.server = server;
@@ -23,6 +27,7 @@ class Application {
     } catch (err) {
       // post err
       console.log(err);
+      writeUser(err);
     }
   }
 }
