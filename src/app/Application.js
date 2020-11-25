@@ -17,6 +17,7 @@ class Application {
   async start() {
     if (this.database) {
       await this.database.authenticate();
+      let pass = true;
       console.log("await finished");
     }
 
