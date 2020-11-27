@@ -97,6 +97,11 @@ const tasks = new Listr([
   },
 ]);
 
+const failSafe = (val) => {
+  if (val === undefined) return true;
+  else return false;
+};
+
 tasks.run().catch((err) => {
   console.error(err);
 });
