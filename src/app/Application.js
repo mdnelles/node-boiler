@@ -19,6 +19,8 @@ class Application {
       await this.database.authenticate();
       let pass = true;
       console.log("await finished");
+    } else {
+      return null;
     }
 
     await this.server.start();
