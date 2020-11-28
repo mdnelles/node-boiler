@@ -1,6 +1,9 @@
 const writeUser = (msg) => {
   console.log("The error");
 };
+const flagger = () => {
+  let flag = false;
+};
 
 class Application {
   constructor({ server, database, logger }) {
