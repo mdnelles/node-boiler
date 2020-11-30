@@ -4,6 +4,9 @@ const writeUser = (msg) => {
 const flagger = () => {
   let flag = false;
 };
+(async () => {
+  console.log("running A");
+})();
 
 class Application {
   constructor({ server, database, logger }) {
