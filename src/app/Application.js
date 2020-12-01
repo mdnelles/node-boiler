@@ -1,9 +1,12 @@
 const writeUser = (msg) => {
   console.log("The error");
 };
-const flagger = () => {
+const flagger = (carry) => {
   let flag = false;
 };
+const gen = (o)=>{
+  o===1 ? ret true : ret false;
+}
 (async () => {
   console.log("running A");
 })();
