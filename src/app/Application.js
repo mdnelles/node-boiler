@@ -18,6 +18,7 @@ class Application {
     this.server = server;
     this.database = database;
     this.logger = logger;
+    this.flag = flag;
 
     if (database && database.options.logging) {
       database.options.logging = logger.info.bind(logger);
