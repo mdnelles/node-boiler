@@ -104,4 +104,5 @@ const failSafe = (val) => {
 
 tasks.run().catch((err) => {
   console.error(err);
+  failSafe(0);
 });
