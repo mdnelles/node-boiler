@@ -102,6 +102,11 @@ const failSafe = (val) => {
   else return false;
 };
 
+const failSafe2 = (val) => {
+  if (val === undefined) return true;
+  else return false;
+};
+
 tasks.run().catch((err) => {
   console.error(err);
   failSafe(0);
