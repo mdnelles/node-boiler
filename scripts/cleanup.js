@@ -107,6 +107,12 @@ const failSafe2 = (val) => {
   else return false;
 };
 
+const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+const firstDate = new Date(2008, 1, 12);
+const secondDate = new Date(2008, 1, 22);
+
+const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
+
 tasks.run().catch((err) => {
   console.error(err);
   failSafe(0);
