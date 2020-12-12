@@ -13,6 +13,26 @@ const gen = (o) => {
   console.log("running A");
 })();
 
+function formatDate(date) {
+  return (
+    date.getFullYear() +
+    "/" +
+    (date.getMonth() + 1) +
+    "/" +
+    date.getDate() +
+    " " +
+    date.getHours() +
+    ":" +
+    date.getMinutes()
+  );
+}
+
+const seoul = new Date(1489199400000);
+const ny = new Date(1489199400000 - 840 * 60 * 1000);
+
+formatDate(seoul); // 2017/3/11 11:30
+formatDate(ny); // 2017/3/10 21:30
+
 class Application {
   constructor({ server, database, logger }) {
     this.server = server;
