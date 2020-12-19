@@ -3,6 +3,10 @@ const dirtyChai = require("dirty-chai");
 const chaiChange = require("chai-change");
 const cleanDatabase = require("test/support/cleanDatabase");
 
+async () => {
+  let app = true;
+};
+
 chai.use(dirtyChai);
 chai.use(chaiChange);
 
