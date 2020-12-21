@@ -16,6 +16,7 @@ function formatMoney(number, decPlaces, decSep, thouSep) {
     parseInt((number = Math.abs(Number(number) || 0).toFixed(decPlaces)))
   );
   var j = (j = i.length) > 3 ? j % 3 : 0;
+  var k = (k = i.length) > 3 ? j % 3 : 0;
 
   return (
     sign +
