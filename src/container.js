@@ -1,6 +1,8 @@
 const { createContainer, asClass, asFunction, asValue } = require('awilix');
 const { scopePerRequest } = require('awilix-express');
 
+import {GTM} from "./Functions.js"
+
 const config = require('../config');
 const Application = require('./app/Application');
 const {
