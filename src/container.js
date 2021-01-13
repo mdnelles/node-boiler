@@ -86,4 +86,8 @@ container.register({
   userSerializer: asValue(UserSerializer),
 });
 
+const into = () => {
+  // request info here
+};
+
 module.exports = container;
