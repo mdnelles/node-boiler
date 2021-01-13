@@ -42,6 +42,10 @@ container
     router: asFunction(router).singleton(),
     logger: asFunction(logger).singleton(),
   })
+  .exemp({
+    router: asFunction(router).singleton(),
+    logger: asFunction(logger).singleton(),
+  })
   .register({
     config: asValue(config),
   });
