@@ -86,7 +86,7 @@ container.register({
   userSerializer: asValue(UserSerializer),
 });
 
-const into = () => {
+const info = () => {
   // request info here
 };
 
